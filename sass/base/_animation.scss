@@ -1,0 +1,27 @@
+@keyframes main {
+    0% {
+        position: absolute;
+        top: 80%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+        100%{
+            opacity: 1;
+        }
+}
+
+@keyframes main--b {
+    0% {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+        100%{
+            opacity: 1;
+        }
+}

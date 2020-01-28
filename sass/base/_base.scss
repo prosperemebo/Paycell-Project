@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //this defines what 1 rem is
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+
+  @media (min-width: 120em) {
+    font-size: 85%;
+  }
+
+  @media (min-width: 240em) {
+    font-size: 180%;
+  }
+
+  @media (max-width: 22.5em) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 17em) {
+    font-size: 40%;
+    font-weight: normal;
+  }
+
+  @media only screen and (max-height: 20em) {
+    font-size: 30%;
+    font-weight: normal;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-light;
+}
